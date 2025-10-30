@@ -61,6 +61,69 @@ void Chess::FENtoBoard(const std::string& fen) {
     // 3: castling availability (KQkq or -)
     // 4: en passant target square (in algebraic notation, or -)
     // 5: halfmove clock (number of halfmoves since the last capture or pawn advance)
+
+    // row and col variables to place pieces
+    int row = 0;
+    int col = 0;
+
+    // go through each char in fen
+    for(char c : fen){
+        std::cout << "Check" <<std::endl;
+        // check if '/' to move to the next row
+        if(c == '/'){
+            std::cout << "Row Increased" <<std::endl;
+            row++;
+            col = 0;
+        } 
+        // move along columns if its a number
+        else if (isdigit(c)){
+            std::cout << "Is digit" <<std::endl;
+            col = c - '0';
+        }
+        // place piece
+        else{
+            // get square to place piece
+            ChessSquare* square = _grid->getSquare(col, row);
+
+            // check if uppercase
+            bool isUpperCase = isupper(c);
+            int playerNum = isUpperCase == true ? 1 : 0;
+
+            // different pieces
+            if (c == 'r' || c == 'R') {
+                Bit* piece = PieceForPlayer(playerNum, Rook);
+                piece->setPosition(square->getPosition());
+                square->setBit(piece);
+            }
+            else if (c == 'n' || c == 'N') {
+                Bit* piece = PieceForPlayer(playerNum,Knight);
+                piece->setPosition(square->getPosition());
+                square->setBit(piece);
+            }
+            else if (c == 'b' || c == 'B') {
+                Bit* piece = PieceForPlayer(playerNum,Bishop);
+                piece->setPosition(square->getPosition());
+                square->setBit(piece);
+            }
+            else if (c == 'q' || c == 'Q') {
+                Bit* piece = PieceForPlayer(playerNum,Queen);
+                piece->setPosition(square->getPosition());
+                square->setBit(piece);
+            }
+            else if (c == 'k' || c == 'K') {
+                Bit* piece = PieceForPlayer(playerNum,King);
+                piece->setPosition(square->getPosition());
+                square->setBit(piece);
+            }
+            else if (c == 'p' || c == 'P') {
+                Bit* piece = PieceForPlayer(playerNum,Pawn);
+                piece->setPosition(square->getPosition());
+                square->setBit(piece);
+            }
+            // go to the next col
+            col++;
+        }
+    }
 }
 
 bool Chess::actionForEmptyHolder(BitHolder &holder)
