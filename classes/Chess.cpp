@@ -68,16 +68,13 @@ void Chess::FENtoBoard(const std::string& fen) {
 
     // go through each char in fen
     for(char c : fen){
-        std::cout << "Check" <<std::endl;
         // check if '/' to move to the next row
         if(c == '/'){
-            std::cout << "Row Increased" <<std::endl;
             row++;
             col = 0;
         } 
         // move along columns if its a number
         else if (isdigit(c)){
-            std::cout << "Is digit" <<std::endl;
             col = c - '0';
         }
         // place piece
