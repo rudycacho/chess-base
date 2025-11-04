@@ -1,13 +1,10 @@
-Fork or clone your this chess project into a new GitHub repository.
+# Chess Base
 
-Add support for FEN stringsLinks to an external site. to your game setup so that instead of the current way you are setting up your game board you are setting it up with a call similar to the following call.
+A simple recreation of the classic Pong game made in Unity.
 
-FENtoBoard("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR");
 
-Your routine should be able to take just the board position portion of a FEN string, or the entire FEN string like so:
-
-FENtoBoard("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
-
-(you can ignore the end for now)
-
-This will allow you to quickly check that your castling, promotion and en passant code is working.
+## FEN String Support
+- When I began my approach I started with making it iterate through each character of the string and that each slash would mean that it is a new row.
+- For the numbers in the string representing empty space, I simply used its ascii value to turn it from a character to an int and simply advance the column amount by that much.
+- I then simply would check if the character was uppercase by using the built in isUpper() and would set a boolean based on that to see if the piece was black or white.
+- Then finally I would set the piece type based off the character, and advance to the next column.
