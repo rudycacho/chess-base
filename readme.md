@@ -8,4 +8,4 @@
 - Then finally I would set the piece type based off the character, and advance to the next column.
 
 ## Knight, King, and Pawn Movement
-- First I want to start off by saying that I hate all the time I spent debugging why my black pieces were not moving until I found out the important difference between bitScanForward and bitScanDorward64
+- First I want to start off by saying that I hate all the time I spent debugging why my black pieces were not moving until I found out the important difference between bitScanForward and bitScanForward64
