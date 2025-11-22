@@ -1,0 +1,9 @@
+C:/Users/rudyc/Documents/CSUMB/CST426/chess-base/out/build/Visual Studio Build Tools 2022 Release - amd64/CMakeFiles/Experimental.dir
+C:/Users/rudyc/Documents/CSUMB/CST426/chess-base/out/build/Visual Studio Build Tools 2022 Release - amd64/CMakeFiles/Nightly.dir
+C:/Users/rudyc/Documents/CSUMB/CST426/chess-base/out/build/Visual Studio Build Tools 2022 Release - amd64/CMakeFiles/Continuous.dir
+C:/Users/rudyc/Documents/CSUMB/CST426/chess-base/out/build/Visual Studio Build Tools 2022 Release - amd64/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/rudyc/Documents/CSUMB/CST426/chess-base/out/build/Visual Studio Build Tools 2022 Release - amd64/CMakeFiles/demo.dir
+C:/Users/rudyc/Documents/CSUMB/CST426/chess-base/out/build/Visual Studio Build Tools 2022 Release - amd64/CMakeFiles/PACKAGE.dir
+C:/Users/rudyc/Documents/CSUMB/CST426/chess-base/out/build/Visual Studio Build Tools 2022 Release - amd64/CMakeFiles/RUN_TESTS.dir
+C:/Users/rudyc/Documents/CSUMB/CST426/chess-base/out/build/Visual Studio Build Tools 2022 Release - amd64/CMakeFiles/ALL_BUILD.dir
+C:/Users/rudyc/Documents/CSUMB/CST426/chess-base/out/build/Visual Studio Build Tools 2022 Release - amd64/CMakeFiles/ZERO_CHECK.dir
